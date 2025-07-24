@@ -224,3 +224,124 @@
 .trusted_desc ul li {
     margin-bottom: 18px;
 }
+
+/* Latest  Deals */
+.deal_texts{
+    text-align: center;
+}
+.deal_title{
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.deals_clr{
+    color: var(--orange);
+}
+.deal_desc{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--soft-dark);
+    margin-bottom: 120px;
+}
+
+/* Latest  Deals images section */
+.deal_container {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 120px;
+}
+
+.deal_box_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.deal_box {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.deal_box img {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+}
+.image_dark_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.deal_overlay {
+  position: absolute;
+  color: #FFFFFF;
+  z-index: 2;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.center_text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deal_overlay h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.deal_overlay a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+/* Join the colorful Bunch */
+.footer{
+    display: flex;
+    align-items: center;
+}
+.user_join_section{
+    height: 533px;
+    background-size: cover;
+}
+
+/* Footer Style Section */
+.footer{
+    justify-content: space-around;
+}
+.ft_logo{
+    margin-bottom: 13px;
+}
+.logo_desc{
+    font-size: 1.rem;
+    font-weight: 400;
+    color: var(--soft-dark);
+}
+.ft_nav{
+    display: flex;
+    
+}
+.ft_nav ul li{
+    list-style: none;
+}
+.ft_nav ul li a{
+    text-decoration: none;
+}
+.ft_icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
