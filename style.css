@@ -176,3 +176,51 @@
 .add_to_cart_btn:hover {
     background-color: #cf4a07;
 }
+
+/* Flower & Plants Lover */
+.trusted_section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 210px;
+    padding: 150px;
+    margin-bottom: 130px;
+}
+
+.image_wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.image_wrapper img:first-child {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.trusted_badge {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.trusted_title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.trusted_desc {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--soft-dark);
+    margin-bottom: 18px;
+}
+
+.trusted_desc ul li {
+    margin-bottom: 18px;
+}
