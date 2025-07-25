@@ -133,14 +133,12 @@
 
 @media screen and (max-width: 786px) {
 
-    /* Hide nav menu except logo and cart */
     .nav_menu ul li:nth-child(1),
     .nav_menu ul li:nth-child(2),
     .nav_menu ul li:nth-child(3) {
         display: none;
     }
 
-    /* Navbar spacing for mobile */
     .navbar {
         padding: 20px;
     }
@@ -157,7 +155,6 @@
         flex: 1 1 100%;
     }
 
-    /* Text left, image right */
     .hero_text {
         text-align: left;
         order: 2;
@@ -168,7 +165,6 @@
         text-align: right;
     }
 
-    /* Reduce font size on small screens */
     .hero_title {
         font-size: 2.5rem;
     }
@@ -180,6 +176,7 @@
 
 
 /* Card Intro Section */
+
 .card_intro {
     text-align: center;
     justify-content: center;
@@ -277,6 +274,7 @@
 .add_to_cart_btn:hover {
     background-color: #cf4a07;
 }
+
 /* making responsive card section */
 
 @media (max-width: 768px) {
@@ -319,17 +317,28 @@
     max-width: 450px;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
 .trusted_badge {
     position: absolute;
-    top: -25px;
-    right: -25px;
-    width: 90px;
-    height: 90px;
+    top: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
     z-index: 2;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+    animation: rotateBadge 4s linear infinite;
+}
+
+/* trusted badge rotate infinite style */
+
+@keyframes rotateBadge {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .trusted_text {
@@ -355,6 +364,7 @@
 .trusted_desc ul li {
     margin-bottom: 18px;
 }
+
 /* Making Responsive Flower and plants lover */
 
 @media (max-width: 768px) {
@@ -386,7 +396,7 @@
     }
 
     .trusted_badge {
-        display: none; /* Hide badge on small screens */
+        display: none;
     }
 }
 
@@ -511,7 +521,7 @@
     letter-spacing: 1px;
 }
 
-/* Making responsive latest deal Section */
+/* Making responsive latest deals Section */
 
 @media (max-width: 768px) {
     .deal_container {
@@ -558,6 +568,7 @@
 
 
 /* Join the colorful Bunch */
+
 .user_join_section {
     height: 533px;
     background-size: cover;
@@ -656,6 +667,7 @@
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
 }
+
 /* Making Responsive Newsletter section */
 
 @media (max-width: 768px) {
@@ -714,6 +726,7 @@
 }
 
 /* Footer Style Section */
+
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -794,42 +807,41 @@
 /* making responsive Footer Section */
 
 @media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    gap: 40px;
-    padding: 40px 20px;
-    align-items: flex-start;
-  }
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+        align-items: flex-start;
+    }
 
-  .logo_desc,
-  .ft_na_1,
-  .ft_na_2,
-  .ft_icons {
-    max-width: 100%;
-    width: 100%;
-  }
+    .logo_desc,
+    .ft_na_1,
+    .ft_na_2,
+    .ft_icons {
+        max-width: 100%;
+        width: 100%;
+    }
 
-  .logo_desc {
-    margin-bottom: 20px;
-  }
+    .logo_desc {
+        margin-bottom: 20px;
+    }
 
-  .ft_nav {
-    flex-direction: column;
-    gap: 30px;
-    width: 100%;
-  }
+    .ft_nav {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
 
-  .ft_nav ul {
-    padding-left: 0;
-  }
+    .ft_nav ul {
+        padding-left: 0;
+    }
 
-  .ft_nav ul li {
-    margin-bottom: 20px;
-  }
+    .ft_nav ul li {
+        margin-bottom: 20px;
+    }
 
-  .ft_icons {
-    gap: 15px;
-    justify-content: flex-start;
-  }
+    .ft_icons {
+        gap: 15px;
+        justify-content: flex-start;
+    }
 }
-
